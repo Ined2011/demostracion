@@ -1,0 +1,160 @@
+/* Contenedor principal centrado en pantalla */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f4f6f9;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 20px;
+}
+
+/* Tarjeta del formulario */
+.login-card {
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+  width: 100%;
+  max-width: 420px;
+  text-align: center;
+}
+
+/* Estilo del Logo */
+.login-logo h2 {
+  font-size: 24px;
+  color: #1a1a1a;
+  margin-bottom: 20px;
+}
+.login-logo span {
+  color: #ff6b6b; /* Color de acento para la tienda */
+}
+
+.login-card h3 {
+  margin: 0 0 8px 0;
+  font-size: 22px;
+  color: #333;
+}
+
+.login-subtitle {
+  color: #666;
+  font-size: 14px;
+  margin-bottom: 24px;
+}
+
+/* Mensaje de error */
+.login-error {
+  background-color: #ffe5e5;
+  color: #cc0000;
+  padding: 10px;
+  border-radius: 6px;
+  font-size: 14px;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+/* Grupos de formulario */
+.login-form {
+  text-align: left;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  color: #444;
+  margin-bottom: 6px;
+}
+
+.form-group input[type="email"],
+.password-wrapper input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #cccccc;
+  border-radius: 8px;
+  font-size: 14px;
+  box-sizing: border-box;
+  transition: border-color 0.2s;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: #ff6b6b;
+}
+
+/* Contenedor especial para mostrar/ocultar contraseña */
+.password-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.toggle-password {
+  position: absolute;
+  right: 12px;
+  background: none;
+  border: none;
+  color: #666;
+  font-size: 12px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.toggle-password:hover {
+  color: #ff6b6b;
+}
+
+/* Acciones extras (Recordarme / Olvidé contraseña) */
+.login-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 13px;
+  margin-bottom: 24px;
+}
+
+.remember-me {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #555;
+  cursor: pointer;
+}
+
+.forgot-link, .register-redirect a {
+  color: #ff6b6b;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.forgot-link:hover, .register-redirect a:hover {
+  text-decoration: underline;
+}
+
+/* Botón de inicio de sesión */
+.btn-login {
+  width: 100%;
+  padding: 14px;
+  background-color: #1a1a1a; /* Negro elegante, común en e-commerce */
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.btn-login:hover {
+  background-color: #ff6b6b; /* Cambia al color de acento al pasar el cursor */
+}
+
+.register-redirect {
+  margin-top: 24px;
+  font-size: 14px;
+  color: #555;
+}
